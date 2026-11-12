@@ -1,0 +1,24 @@
+﻿<Window x:Class="Api_call.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Api_call"
+        mc:Ignorable="d"
+        Title="NewsAPI — Connexion" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Nom d'utilisateur" />
+            <TextBox x:Name="LoginTextBox" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Margin="0,5,0,10" />
+
+            <TextBlock Text="Mot de passe" />
+            <PasswordBox x:Name="PasswordBox" Margin="0,5,0,10" />
+
+            <Button Content="Se connecter" Click="LoginButton_Click" Margin="0,10,0,0" />
+            <Button Content="S'inscrire" Click="RegisterButton_Click" Margin="0,10,0,0" />
+
+
+            <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" Margin="0,10,0,0" />
+        </StackPanel>
+    </Grid>
+</Window>

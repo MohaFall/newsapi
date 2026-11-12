@@ -1,0 +1,9 @@
+bin/
+obj/
+.vs/
+packages/
+*.user
+ProjetAPINews/secrets.config
+CLAUDE.md
+TODO.md
+docs/
